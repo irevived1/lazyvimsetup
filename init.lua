@@ -2,6 +2,7 @@
 require("config.lazy")
 
 vim.o.background = "dark" -- or "light" for light mode
+vim.opt_local.wrap = true
 
 vim.api.nvim_exec(
   [[ 
