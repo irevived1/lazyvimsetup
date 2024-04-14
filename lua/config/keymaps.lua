@@ -10,3 +10,12 @@ vim.keymap.set("n", "<C-z>", "<cmd>ZoomToggle<CR>", { noremap = true, desc = "Zo
 
 vim.keymap.set("i", "df", "<ESC>", { noremap = true, desc = "ESC" })
 vim.keymap.set("n", "<CR>", "o<ESC>", { noremap = true, desc = "ESC" })
+
+vim.keymap.set("n", ",n", "<cmd>Neotree toggle<CR>", { noremap = true, desc = "Tree Toggle" })
+vim.keymap.set("n", ",N", "<cmd>Neotree toggle reveal left<CR>", { noremap = true, desc = "Follow File Toggle" })
+
+-- undo lazyVim default keymaps
+vim.keymap.set({ "n", "x" }, "j", "'j'", { expr = true, silent = true })
+vim.keymap.set({ "n", "x" }, "k", "'k'", { expr = true, silent = true })
+vim.keymap.set("v", "<", "<")
+vim.keymap.set("v", ">", ">")

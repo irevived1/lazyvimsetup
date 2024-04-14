@@ -3,6 +3,7 @@ return {
     "nvim-telescope/telescope.nvim",
     keys = {
       { "<C-p>", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
+      { "<C-n>", "<cmd>Telescope resume<cr>", desc = "Resume Popup" },
       { "<C-b>", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
     },
     config = function()
