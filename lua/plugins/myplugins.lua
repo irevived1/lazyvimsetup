@@ -19,13 +19,11 @@ return {
   {
     "nxstynate/oneDarkPro.nvim",
     priority = 1000,
-    config = function()
-      require("oneDarkPro").setup({
-        palette_overrides = {
-          dark0 = "#282c34",
-        },
-      })
-    end,
+    opts = {
+      palette_overrides = {
+        dark0 = "#282c34",
+      },
+    },
   },
   { "NvChad/nvim-colorizer.lua", opts = {
     user_default_options = {

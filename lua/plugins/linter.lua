@@ -3,6 +3,9 @@ return {
     "neovim/nvim-lspconfig",
     -- other settings removed for brevity
     opts = {
+      diagnostics = {
+        virtual_text = false,
+      },
       ---@type lspconfig.options
       servers = {
         eslint = {
